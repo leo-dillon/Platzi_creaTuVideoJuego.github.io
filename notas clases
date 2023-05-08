@@ -1,0 +1,40 @@
+Clase 2 
+   Siempre cargar el html antes del canvas por que de no hacerlo nos puede dar errores el elemento 
+   MANEJO DE CANVAS 
+   No agarraremos al elemento canvas con un queriSelector, sin que usaremos un getContext("2d") - Esto
+   toma el canvas y lo coloca para que sea 2d
+   Podemos pintar dentro de un canvas con - fillRect(width start, height start ,width end, height end) - 
+   Podemos borrar dentro de un canvas con - fillClear(width start, height start ,width end, height end)  
+   Podemos borrar dentro de un canvas con - fillText( 'Texto', width Start, height Start)  
+      Para editar ese texto podemos usar distintos métodos.
+      game.font = "25px Verdada"    manejamos el tamaño y la familia del text 
+      game.fillStyle = "red"        Manejamos el color del text
+      game.textAlign = "" Start | end | center Manejamos la posición inicial del text
+
+
+Clase 3
+   Definiremos el alto y ancho del canvas dependiendo de la pantalla donde se renderise. Para eso vamos a usar 
+      Window.innerWidth  Toma el ancho de la pantalla.
+      Window.innerHeight Toma el alto de la pantalla.
+   y para colocarlo en el Canvas utilizamos 
+      canvas.setAttribute('height', Window.innerHeight * 1/% ) 
+      canvas.setAttribute('width', Window.innerWidth * 1/% )
+
+      
+Clase 4
+   En está clase vimos tipos nuevos de eventos 
+      LOAD   - Con este podemos hacer que una función corra cuando se cargue un elemento.
+      RESIZE - Con está podemos hacer que una función corra cada vez que se modifique el size.
+   Con esto modificamos la función start y creamos una función encargada de dar tamaño al canvas y a los 
+   elements 
+
+
+Clase 5
+   Array multifunctional son Arrays dentro de arrays.
+   Nos moveremos dentro de está forma array[A][B].
+   Para eliminar los espacios vacíos de un texto usamos el método texto.trim() .
+      trim() - elimina los espacios vacíos, como espacios simples, dobles, etc.
+   Para separar las distintas filas miramos el String que nos envían y notamos que cada vez que hay que 
+   hacer un salto de línea coloca un ' \n ' entonces para separar por filas usamos string.split("#") donde
+   dentro del split debemos colocar donde cerraremos el String y abriremos el siguiente .
+      string.split(" ") EJ  string = ["hola como"] => string = [["hola ["como"]].

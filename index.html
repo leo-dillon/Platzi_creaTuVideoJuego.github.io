@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="./styles.css">
+      <title>Juego de velocidad</title>
+</head>
+<body>
+      <div class="game-container">
+            <canvas id="game"></canvas>
+            <div class="btns">
+                  <button class="button_Game" id="up">Arriba</button>
+                  <button class="button_Game" id="left">Izquierda</button>
+                  <button class="button_Game" id="right">derecha</button>
+                  <button class="button_Game" id="down">Abajo</button>
+            </div>
+      </div>
+      <div class="messages">
+            <p>Vidas: <span id="vidas"></span></p>
+            <p>Tiempo: <span id="tiempo"></span></p>
+            <p>Record Global: <span id="record"></span></p>
+      </div>
+      <section class="content_menu">
+            <div class="content_menu__menu ">
+                  <h2>Bienvenido a Platzi Scape</h2>
+                  <p>En este divertido y adictivo juego vas a tomar el control de nuestro amigo Bob, un esqueleto que adora los regalos. </p> <br>
+                  <p>Tu objetivo será atrapar todos los regalos, en el menor tiempo posible.</p>
+                  <button id="start">Empezar</button>
+            </div>
+            <div class="content_menu_reset block">
+                  <h2>Juego finalizado.</h2>
+                  <p class="Win block"> 
+                        Felicidades!!!! <br>
+                        <span id="resultado">   </span>
+                  </p>
+                  <p class="Lose block">
+                         Casi :C
+                         <span id="resultado">  </span>
+                  </p>
+                  <button id="reStart">Otra?</button>
+            </div>
+      </section>
+      <script src="./maps.js"></script>
+      <script src="./game.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+:root {
+      --azul-oscuro: #081c24;
+      --azul-claro: #44c0f4;
+      --blanco: #ffffff;
+      --gris-claro: #f5f5f5;
+      --rojo-oscuro: #742a2a;
+      --orange: #ff8200;
+      box-sizing: border-box;
+}
+.block{
+      display: none;
+}
+
+body {
+      background-color: var(--rojo-oscuro);
+      color: var(--blanco);  
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      margin: 12px 0;
+      padding: 0;
+}
+.content_menu{
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: rgb(128, 128, 128, 90%);
+}
+.content_menu__menu,
+.content_menu_reset{
+      width: 30%;
+      min-width: 300px;
+      height: 100%;
+      padding: 12px;
+      background-color: var(--rojo-oscuro);
+}
+.content_menu__menu h2,
+.content_menu_reset h2{
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      color: var(--gris-claro);
+}
+.content_menu__menu button{
+      margin-top: 16px;
+      width: 95%;
+      padding: 4px 0;
+      border-radius: 4px;
+}
+.game-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      height: max-content;
+      margin-bottom: 12px;
+      width: 95%;
+}
+
+canvas {
+      box-shadow: 0px 0px 4px 4px var(--azul-claro);
+      border-radius: 8px;
+      background-color: var(--azul-oscuro);
+      border: 1px solid var(--orange);
+      margin-bottom: 20px;
+}
+
+.btns {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 0 auto;
+      width: 100%;
+}
+
+.button_Game {
+      background-color: var(--azul-claro);
+      border-radius: 8px;
+      border: 1px solid var(--orange);
+      font-family: inherit;
+      margin: 0;
+      padding: 5px 20px;
+      width: 100px;
+}
+.button_Game:not(:last-child) {
+      margin-right: 4px;     
+}
+
+.messages {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 auto;
+      width: 80%;
+      max-width: 460px;
+      background-color: grey;
+      padding: 20px;
+      margin-bottom: 12px;
+      border: 1px solid var(--orange);
+}
+
+p {   
+      display: block;
+      margin: 0;
+      width: 100%;
+}
+
+@media (max-width: 440px) {
+      .button_Game { margin-top: 4px; }
+      #up, #down { margin-left: 100%; margin-right: 100%; }
+}
